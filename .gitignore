@@ -1,2 +1,6 @@
 .pio
 .vscode
+
+cmake-build-micro/
+
+cmake-build-debug/
