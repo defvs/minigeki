@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/gd/nuclei-sdk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/microchip" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/mindmotion/mm32sdk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/nordic/nrfx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/nuvoton" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/nxp/lpcopen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/nxp/mcux-sdk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/nxp/nxp_sdk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/renesas/rx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/silabs/cmsis-dfp-efm32gg12b" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/sony/cxd56/spresense-exported-sdk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/cmsis_device_f0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/cmsis_device_f1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/cmsis_device_f2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/cmsis_device_f3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/cmsis_device_f4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/cmsis_device_f7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/cmsis_device_g0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/cmsis_device_g4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/cmsis_device_h7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/cmsis_device_l0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/cmsis_device_l1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/cmsis_device_l4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/cmsis_device_l5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/stm32f0xx_hal_driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/stm32f1xx_hal_driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/stm32f2xx_hal_driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/stm32f3xx_hal_driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/stm32f4xx_hal_driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/stm32f7xx_hal_driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/stm32g0xx_hal_driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/stm32g4xx_hal_driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/stm32h7xx_hal_driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/stm32l0xx_hal_driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/stm32l1xx_hal_driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/stm32l4xx_hal_driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/st/stm32l5xx_hal_driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/hw/mcu/ti" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/lib/CMSIS_5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/lib/FreeRTOS-Kernel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/lib/lwip" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/lib/sct_neopixel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/tools/uf2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/pico_sdk-src/lib/tinyusb/tools/uf2/hidapi" vcs="Git" />
+  </component>
+</project>

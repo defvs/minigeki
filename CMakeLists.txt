@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 
 # Pull in SDK (must be before project)
+set(PICO_SDK_FETCH_FROM_GIT on)
 include(pico_sdk_import.cmake)
 
 project(Pico_Game_Controller C CXX ASM)
