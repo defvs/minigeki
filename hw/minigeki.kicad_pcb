@@ -1434,7 +1434,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 8cb07eef-4e4e-47a5-9a8b-ea7986073b39)
     )
-    (fp_text value "USB_C_Receptacle_USB2.0" (at 0 4.935) (layer "F.Fab")
+    (fp_text value "USB_C_Receptacle_USB2.0" (at -13.518 3.287) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp bcecf866-87db-4f8d-b360-a530337f4827)
     )

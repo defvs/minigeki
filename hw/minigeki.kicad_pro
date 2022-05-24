@@ -143,10 +143,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "power_pin_not_driven|787400|1384300|e940be1a-5f35-4b12-8e3d-d7b4a5e63173|00000000-0000-0000-0000-000000000000",
-      "power_pin_not_driven|952500|304800|4d101ab7-4788-4b7f-8179-21df7332d4bb|00000000-0000-0000-0000-000000000000"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -355,7 +352,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "RP2040_minimal.kicad_pro",
+    "filename": "minigeki.kicad_pro",
     "version": 1
   },
   "net_settings": {
