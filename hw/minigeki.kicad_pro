@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.19999999999999998
+          "min_clearance": 0.15
         }
       },
       "diff_pair_dimensions": [
@@ -64,7 +64,7 @@
         "annular_width": "error",
         "clearance": "error",
         "copper_edge_clearance": "error",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "ignore",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
@@ -98,7 +98,7 @@
         "unresolved_variable": "error",
         "via_dangling": "warning",
         "zone_has_empty_net": "error",
-        "zones_intersect": "error"
+        "zones_intersect": "warning"
       },
       "rules": {
         "allow_blind_buried_vias": false,
