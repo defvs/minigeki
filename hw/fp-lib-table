@@ -1,3 +1,4 @@
 (fp_lib_table
-  (lib (name RP2040_minimal)(type KiCad)(uri ${KIPRJMOD}/RP2040_minimal.pretty)(options "")(descr ""))
+  (lib (name "RP2040_minimal")(type "KiCad")(uri "${KIPRJMOD}/RP2040_minimal.pretty")(options "")(descr ""))
+  (lib (name "PTAXX33")(type "KiCad")(uri "${KIPRJMOD}/PTAXX33_lib/PTA4543-2015DPB103.pretty")(options "")(descr ""))
 )
