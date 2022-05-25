@@ -1,0 +1,24 @@
+src/controller_config.h
+src/pico_game_controller.c
+src/tusb_config.h
+src/usb_descriptors.c
+src/usb_descriptors.h
+    Copyright: speedypotato
+    License: GPLv3
+    Source: https://github.com/speedypotato/Pico-Game-Controller
+
+src/ws2812.pio
+    Copyright: Raspberry Pi (Trading) Ltd.
+    License: BSD-3-Clause
+    Source: https://github.com/raspberrypi/pico-examples
+
+pico-sdk
+    Copyright: Raspberry Pi (Trading) Ltd.
+    License: BSD-3-Clause
+    Source: https://github.com/raspberrypi/pico-sdk
+
+hw
+    Based on rp2040-Minimal
+    Copyright: Raspberry Pi (Trading) Ltd.
+    License: BSD-3-Clause
+    Source: https://datasheets.raspberrypi.com/rp2040/Minimal-KiCAD.zip

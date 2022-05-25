@@ -1,7 +1,14 @@
 /*
  * M.I.N.I.G.E.K.I v2
  * @author defvs
- * Adapted from original by SpeedyPotato. See LICENSES for more info.
+ * Adapted from original by SpeedyPotato. Licensed under GPLv3
+ *
+ * LICENSE CLAUSE - GPLv3
+ * The software included in this product contains copyrighted software that is licensed under the GPLv3.
+ * A copy of that license is included in this document on page X.
+ * You may obtain the complete Corresponding Source code from us for a period of three years after our
+ *      last shipment of this product and/or spare parts therefor.
+ * You can obtain the full source code for this project at https://github.com/defvs/minigeki
  */
 #define PICO_GAME_CONTROLLER_C
 
