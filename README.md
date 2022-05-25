@@ -1,3 +1,4 @@
+![Minigeki Logo](https://github.com/defvs/minigeki/blob/master/graphics/minigeki-logo.png?raw=true)
 # M.I.N.I.G.E.K.I : a portable ONGEKI controller
 
 A portable implementation of an ONGEKI controller, with all necessary buttons, two macros, RGB LED support, USB-C.
