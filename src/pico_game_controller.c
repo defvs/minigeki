@@ -12,15 +12,13 @@
 #include "controller_config.h"
 #include "encoders.pio.h"
 #include "hardware/clocks.h"
-#include "hardware/pio.h"
-#include "hardware/gpio.h"
 #include "hardware/adc.h"
 #include "pico/multicore.h"
 #include "tusb.h"
 #include "usb_descriptors.h"
 #include "ws2812.pio.h"
 
-PIO pio, pio_1;
+PIO pio_1;
 uint16_t slider_val;
 uint16_t prev_slider_val;
 
@@ -46,9 +44,9 @@ RGB_t rgb_reactive_current[WS2812B_LEDS];
  * WS2812B RGB Assignment
  * @param pixel_grb The pixel color to set
  **/
-/*static inline void put_pixel(uint32_t pixel_grb) {
-	pio_sm_put_blocking(pio1, ENC_GPIO_SIZE, pixel_grb << 8u); // FIXME
-}*/
+static inline void put_pixel(uint32_t pixel_grb) {
+	pio_sm_put_blocking(pio1, 0, pixel_grb << 8u);
+}
 
 /**
  * WS2812B RGB Format Helper
@@ -57,16 +55,18 @@ static inline uint32_t urgb_u32(uint8_t r, uint8_t g, uint8_t b) {
 	return ((uint32_t) (r) << 8) | ((uint32_t) (g) << 16) | (uint32_t) (b);
 }
 
+static inline uint32_t urgb(RGB_t pixel) {
+    return urgb_u32(pixel.r, pixel.g, pixel.b);
+}
+
 /**
  * WS2812B Lighting
  * @param counter Current number of WS2812B cycles
  **/
-void ws2812b_update(uint32_t counter) {
-	if (time_us_64() - reactive_timeout_timestamp >= REACTIVE_TIMEOUT_MAX) {
-
-	} else {
-		// TODO
-	}
+void ws2812b_update() {
+    for (int i = 0; i < WS2812B_LEDS; ++i) {
+        put_pixel(urgb(rgb_reactive_current[i]));
+    }
 }
 
 /**
@@ -147,8 +147,7 @@ void key_mode() {
 
 		/*------------- Mouse -------------*/
 		// find the delta between previous and current slider_val
-		uint16_t delta = 0;
-		delta = (slider_val - prev_slider_val);
+		uint16_t delta = (slider_val - prev_slider_val);
 		prev_slider_val = slider_val;
 
 		if (kbm_report) {
@@ -181,9 +180,8 @@ void update_inputs() {
  * Second Core Runnable
  **/
 void core1_entry() {
-	uint32_t counter = 0;
 	while (1) {
-		ws2812b_update(++counter);
+		ws2812b_update();
 		sleep_ms(5);
 	}
 }
@@ -192,24 +190,12 @@ void core1_entry() {
  * Initialize Board Pins
  **/
 void init() {
-	// LED Pin on when connected
-/*
-	gpio_init(25);
-	gpio_set_dir(25, GPIO_OUT);
-	gpio_put(25, 1);
-*/
-
-	// Set up the state machine for encoders
-	pio = pio0;
-	uint offset = pio_add_program(pio, &encoders_program);
-
 	reactive_timeout_timestamp = time_us_64();
 
 	// Set up WS2812B
 	pio_1 = pio1;
 	uint offset2 = pio_add_program(pio_1, &ws2812_program);
-	// FIXME
-	// ws2812_program_init(pio_1, ENC_GPIO_SIZE, offset2, WS2812B_GPIO, 800000,false);
+	ws2812_program_init(pio_1, 0, offset2, WS2812B_GPIO, 800000,false);
 
 	// Setup Button GPIO
 	for (int i = 0; i < SW_GPIO_SIZE; i++) {
@@ -241,6 +227,10 @@ void init() {
 	// Disable RGB
 	if (gpio_get(SW_GPIO[8])) {
 		multicore_launch_core1(core1_entry);
+	} else {
+        for (int i = 0; i < WS2812B_LEDS; ++i) {
+            put_pixel(urgb_u32(0, 0, 0));
+        }
 	}
 }
 
@@ -285,8 +275,7 @@ void tud_hid_set_report_cb(uint8_t itf, uint8_t report_id,
 	if (report_id == 2 && report_type == HID_REPORT_TYPE_OUTPUT &&
 		bufsize >= sizeof(lights_report))  // light data
 	{
-		size_t i = 0;
-		for (i; i < sizeof(lights_report); i++) {
+		for (size_t i = 0; i < sizeof(lights_report); i++) {
 			lights_report.raw[i] = buffer[i];
 		}
 		reactive_timeout_timestamp = time_us_64();
