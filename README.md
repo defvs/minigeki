@@ -21,6 +21,12 @@ A portable implementation of an ONGEKI controller, with all necessary buttons, t
 - Switch debouncing
 - 8-bit slider position
 
+## Based on / sources
+
+- This project's code is based on SpeedyPotato's [Pico-Game-Controller](https://github.com/speedypotato/Pico-Game-Controller)
+    - It also includes sources from Raspberry Pi's [pico-examples](https://github.com/raspberrypi/pico-examples)
+- This project's PCB is based on Raspberry Pi's [RP2040-Minimal design](https://datasheets.raspberrypi.com/rp2040/Minimal-KiCAD.zip)
+
 ## License and Open Source licensing
 
 minigeki is under GPLv3 in compliance with the usage of existing GPLv3 code. License information can be found in the LICENSE file.
