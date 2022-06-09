@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.25
+          "min_clearance": 0.19999999999999998
         }
       },
       "diff_pair_dimensions": [
@@ -55,7 +55,9 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "track_dangling|102311200|102616000|4a4c345a-6e27-46f7-9911-4590ca9e87d9|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -98,7 +100,7 @@
         "unresolved_variable": "error",
         "via_dangling": "warning",
         "zone_has_empty_net": "error",
-        "zones_intersect": "warning"
+        "zones_intersect": "ignore"
       },
       "rules": {
         "allow_blind_buried_vias": false,
